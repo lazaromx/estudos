@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <table class="tabela">
         <thead>
             <tr>
@@ -18,14 +19,27 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
+            <tr class="jogador">
+                <td class="info-nome">Lázaro</td>
+                <td class="info-altura">1.70</td>
+                <td class="info-peso">68</td>
+                <td class="info-idade">18</td>
             </tr>
+           
         </tbody>
     </table>
+
+    <form action="">
+        <input type="text" name="nome" id="form-name" placeholder="Insira o nome">
+        <input type="text" name="altura" id="form-altura" placeholder="Insira a altura">
+        <input type="text" name="peso" id="form-peso" placeholder="Insira o peso">
+        <input type="text" name="idade" id="form-idade" placeholder="Insira a idade">
+        
+    </form>
+
+   <button id="button-add">adiciona</button>
+
+    
     <script src="prod/app.js"></script> 
 </body>
 </html>

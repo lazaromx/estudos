@@ -5,7 +5,12 @@
 }
 
 .tabela{
-    position:fixed;
     border: solid 1px black;
     align-items: center;
+}
+
+th, td, tr{
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
 }
