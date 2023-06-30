@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>Tabela Jogadores </h1>
     <table class="tabela">
         <thead>
             <tr>
@@ -25,22 +25,27 @@
                 <td class="info-peso">68</td>
                 <td class="info-idade">18</td>
             </tr>
-           
         </tbody>
     </table>
-
-    <form id="form-adiciona">
-        <input type="text" name="nome" id="form-nome" placeholder="Insira o nome">
-        <input type="number" name="altura" id="form-altura" placeholder="Insira a altura">
-        <input type="number" name="peso" id="form-peso" placeholder="Insira o peso">
-        <input type="number" name="idade" id="form-idade" placeholder="Insira a idade">
-        
-        <button id="button-add">adiciona</button>
-    </form>
-
-   
-
     
+    <button class="botao-add"><a href="adiciona.html">Adicionar Jogador</a></button>
+
     <script src="prod/app.js"></script> 
+    <script>
+        
+        
+        function exibirDados() {
+            var params = getURLParameters();
+            if(params){
+                const player = obtemPlayer(params);
+                addPLayerTabela(player)
+            }
+        }
+        
+        window.onload = exibirDados;
+    
+        // Chama a função quando a página é carregada
+        
+    </script>
 </body>
 </html>
