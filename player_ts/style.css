@@ -5,12 +5,26 @@
 }
 
 .tabela{
+    margin: 20px 0;
     border: solid 1px black;
     align-items: center;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
 }
 
 th, td, tr{
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
+}
+
+.botao-add a{
+    text-decoration: none;
+    color:#fff
+}
+
+.botao-add{
+    background-color: #dc143c;
+    padding: 10px;
 }
